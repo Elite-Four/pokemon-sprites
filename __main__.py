@@ -20,7 +20,10 @@ def main():
     form_index = 0
 
     while True:
-        sprite_id = '%d-%d' % (national_id, form_index)
+        if form_index == 0:
+            sprite_id = '%d' % (national_id,)
+        else:
+            sprite_id = '%d-%d' % (national_id, form_index)
         url = get_url(national_id, form_index)
         response = requests.get(url)
 
