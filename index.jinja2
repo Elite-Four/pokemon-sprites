@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<main>
+{% for image in images -%}
+<a href="{{ image }}"><img src="{{ image }}" alt="{{ image }}"></a>
+{% endfor -%}
+</main>

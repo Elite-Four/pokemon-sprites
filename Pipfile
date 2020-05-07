@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 requests = "*"
+jinja2 = "*"
 
 [dev-packages]
 "flake8" = "*"
