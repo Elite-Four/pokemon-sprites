@@ -6,8 +6,8 @@ name: Python application
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  schedule:
+    - cron: "0 0 * * 0" # Every Sunday
 
 permissions:
   contents: read
@@ -35,4 +35,10 @@ jobs:
         python .
     - name: Check if new files generated
       run: |
-        git diff --exit-code
+        if ! git diff --quiet --exit-code; then
+          git config user.name "GitHub Actions"
+          git config user.email actions@github.com
+          git add .
+          git commit -m "Update files"
+          git push
+        fi
