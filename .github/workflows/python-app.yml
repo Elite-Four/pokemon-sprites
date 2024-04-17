@@ -4,8 +4,7 @@
 name: Python application
 
 on:
-  push:
-    branches: [ "master" ]
+  push: {}
   schedule:
     - cron: "0 0 * * 0" # Every Sunday
 
