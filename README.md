@@ -4,5 +4,5 @@ Repository to serve Pokemon sprites
 
 ## Update
 
-    $ pipenv install
-    $ pipenv run python .
+    $ pdm install
+    $ pdm run python .

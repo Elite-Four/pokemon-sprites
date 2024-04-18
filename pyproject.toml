@@ -1,0 +1,13 @@
+[project]
+name = "pokemon-sprites"
+version = "0.1.0"
+dependencies = ["requests", "jinja2"]
+requires-python = ">=3.8.1"
+authors = [{ name = "George Cheng", email = "Gerhut@GMail.com" }]
+readme = "README.md"
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = ["flake8"]
