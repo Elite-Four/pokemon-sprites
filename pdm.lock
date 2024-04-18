@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:4e274056db3c9320e34707322ae48e5cb86af239a24de95a64da12f00eb6eb5e"
+content_hash = "sha256:0991389ff0fd7408734b480290183cda36093f355239a0923da04e3be4cf1635"
 
 [[package]]
 name = "certifi"
