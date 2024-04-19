@@ -1,6 +1,22 @@
 <!DOCTYPE html>
-<main>
-{% for image in images -%}
-<a href="{{ image }}"><img src="{{ image }}" alt="{{ image }}"></a>
-{% endfor -%}
-</main>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pokemon Sprites</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/classic/galleria.classic.min.css">
+        <style>html, body, .galleria { height: 100% }</style>
+    </head>
+    <body>
+        <main class="galleria">
+            {% for image in images -%}
+            <img src="{{ image }}">
+            {% endfor -%}
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/classic/galleria.classic.min.js"></script>
+        <script>Galleria.run('.galleria');</script>
+    </body>
+</html>
